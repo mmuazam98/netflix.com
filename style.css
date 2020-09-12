@@ -126,8 +126,20 @@
       transition: 0.5s;
   }
   .headline aside .playBtn:hover{
-    background: rgba(255, 255, 255,1);
+      background: rgba(255, 255, 255,1);
   }
+  .headline aside .playBtn:hover i,
+    .headline aside .moreBtn:hover i{
+      animation: vibrate 0.5s ease;
+   }
+   @keyframes vibrate{
+       0%,100%{
+           transform: translateX(-1px) scale(1);
+       }
+       50%{
+           transform: translateX(1px) scale(1.05);
+       }
+   }
   .headline aside .moreBtn{
     width: 130px;
     color: #fff;
