@@ -175,14 +175,14 @@
   
   .movie-container {
     flex-basis: 80%;
-    margin-top: 10px;
+    margin: 5px 5px;
     transition: 0.5s;
   }
   .movie-container p {
     color: #fff;
     text-align: left;
     line-height: 1.4;
-    margin-bottom: 15px;
+    margin: 0 0 15px 10px;
   }
   .movie-container h3{
       margin-left: 10px;
@@ -198,10 +198,11 @@
   .movie-container img {
     width: 240px;
     height: 140px;
+    border-radius: 4px;
     /* margin-bottom: 15px; */
   }
   .movie-container:hover {
-        transform: scale(1.1);
+        transform: scale(1.07);
     }
   
   /* SEARCH FUNCTION */
