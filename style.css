@@ -41,8 +41,8 @@
     height: 60px;
     width: 100%;
     background: linear-gradient(rgb(44, 44, 44),rgb(0, 0, 0));
-    position: relative;
-    
+    position: fixed;
+    z-index: 999;
   }
   
   #navbar .nav .nav-header {
@@ -131,6 +131,7 @@
   }
 
 
+  
   /* SECTIONS */
   
   .headline {
@@ -187,7 +188,7 @@
     width: 130px;
     color: #fff;
     cursor: pointer;
-    background: rgba(82, 82, 82,0.7);
+    background: rgb(44, 44, 44);
     font-weight: 600;
     padding: 9px;
     border: none;
@@ -195,7 +196,7 @@
     transition: 0.5s;
   }
   .headline aside .moreBtn:hover{
-    background: rgba(82, 82, 82,1);
+    background: rgba(62, 62, 62,1);
   }
   .headline aside button .play{
       font-size: 17px;
@@ -213,7 +214,7 @@
       max-width: 28%;
       font-weight: 900;
       font-size: 30px;
-      margin-top: 150px;
+      margin-top: 130px;
       margin-left: 34vw;
       text-align: center;
       text-shadow: 2px 2px 5px #000;
@@ -280,7 +281,7 @@
   }
   /*Movies */
   .movies {
-    width: 100%;
+    width: auto;
     height: auto;
     background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
     display: flex;
