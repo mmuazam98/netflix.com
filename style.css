@@ -7,6 +7,7 @@
     /* font-family: 'Lato', 'Arial', sans-serif; */
     font-family: 'Open Sans', sans-serif;
     overflow-x: h;
+    scroll-behavior: smooth;
   }
 
   /* HEADINGS */
