@@ -83,6 +83,7 @@
   .nav .active a{
       opacity: 1;
       font-size: 1.25rem;
+      letter-spacing: -0.5px;
     }
   
   .nav-item a:hover {
