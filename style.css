@@ -205,11 +205,11 @@
     border-radius: 50%;
     padding: 4px;
     cursor: pointer;
-    transform: scale(0.8);
-    transition: 0.5s;
+    transform: scale(0.8) rotate(0);
+    transition: 0.75s;
   }
   section .heading i:hover{
-    transform: rotate(90deg);
+    transform: scale(1) rotate(450deg);
   }
   section .viewMore{
     background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
@@ -217,7 +217,7 @@
     justify-content: center;
   }
   section .viewMore button{
-    background: transparent;
+    background: rgba(0,0,0,0.1);
     color: white;
     border: 1px solid #fff;
     font-size: 20px;
@@ -227,16 +227,16 @@
     transition: 0.5s;
   }
   section .viewMore button:hover{
-    background-color:rgba(0,0,0,0.2) ;
+    background-color:rgba(0,0,0,0.4) ;
   }
 
   section .viewMore button i{
     font-size: 12px;
     vertical-align: middle;
-    transition: 0.5s;
+    transition: 0.75s;
   }
   section .viewMore button:hover i{
-    transform: rotate(90deg);
+    transform: rotate(450deg);
   }
   /*Movies */
   .movies {
