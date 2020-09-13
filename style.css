@@ -192,7 +192,53 @@
       font-weight: 800;
       color: white;
   }
+  section .heading{
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 5px 0 10px 20px;
+  }
+  section .heading i{
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 4px;
+    cursor: pointer;
+    transform: scale(0.8);
+    transition: 0.5s;
+  }
+  section .heading i:hover{
+    transform: rotate(90deg);
+  }
+  section .viewMore{
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    display: flex;
+    justify-content: center;
+  }
+  section .viewMore button{
+    background: transparent;
+    color: white;
+    border: 1px solid #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px 8px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  section .viewMore button:hover{
+    background-color:rgba(0,0,0,0.2) ;
+  }
 
+  section .viewMore button i{
+    font-size: 12px;
+    vertical-align: middle;
+    transition: 0.5s;
+  }
+  section .viewMore button:hover i{
+    transform: rotate(90deg);
+  }
+  /*Movies */
   .movies {
     width: 100%;
     height: auto;
