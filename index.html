@@ -10,23 +10,39 @@
 </head>
 <body>
     <div class="page-wrapper">
-        <div class="nav-wrapper">
-         <nav class="navbar">
-           <a href="#"><img src="images/logo_netflix.png" class="mainLogo" alt="Netflix Logo"></a>
-           <ul class="nav no-search">
-             <li class="nav-item active"><a href="#">Home</a></li>
-             <li class="nav-item"><a href="#series">Series</a></li>
-             <li class="nav-item"><a href="#movies">Movies</a></li>
-             <li class="nav-item"><a href="#">Latest</a></li>
-             <li class="nav-item"><a href="#">Favorites</a></li>
-
-             <li class="nav-item"><i class="fas fa-search" id="icon"></i></li> 
-             <li><i class="fas fa-gift" id="icon"></i></li>
-             <li><i class="fas fa-bell" id="icon"></i></li>
-             <li><img src="images/avatar2.png" alt="" class="avatar"></li>
-           </ul>
-         </nav>
-         </div>
+        <section id="navbar">
+            <div class="nav">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                  <div class="nav-title">
+                    <img src="images/logo_netflix.png" alt="" width="50">
+                  </div>
+                </div>
+                <div class="nav-btn">
+                  <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </label>
+                </div>
+                
+                <div class="nav-links">
+                  <a href="#" class="active">Home</a>
+                  <a href="#series">Series</a>
+                  <a href="#movies">Movies</a>
+                  <a href="#">Latest</a>
+                  <a href="#">Favorites</a>
+                </div>
+                <div class="nav-logos">
+                    <a href="#"><i class="fas fa-search" id="icon"></i></a>
+                    <a href="#"><i class="fas fa-gift" id="icon"></i></a>
+                    <a href="#"><i class="fas fa-bell" id="icon"></i><sup>0</sup></a>
+                    <a href="#"><img src="images/avatar2.png" alt="" class="avatar"></a>
+                </div>
+                
+              </div>
+        </section>
+        
          <section class="headline">
             <aside><img src="images/netflix.png" alt="" height="35" width="35"><span class="film">film</span></aside>
             <div class="movie-name">

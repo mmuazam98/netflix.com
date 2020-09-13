@@ -37,74 +37,104 @@
     height: auto;
   }
   
-  .nav-wrapper {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 99999;
-    background: linear-gradient(rgb(0,0,0),rgb(15, 15, 15))
-  }
-  
-  /* NAVIGATION */
-  
-  .navbar {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
+  #navbar .nav {
     height: 60px;
-    overflow: hidden;
-  }
-  
-  .navbar img {
-    height: 80px;
-    width: 150px;
-    justify-self: start;
-    margin-top: -10px;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(9,80px);
-    justify-self: start;
-    margin-top: -15px!important;
-    margin-left: -200px!important;
+    width: 100%;
+    background: linear-gradient(rgb(44, 44, 44),rgb(0, 0, 0));
+    position: relative;
     
   }
   
-  .nav-item a {
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 300;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: 0.3s ease-out;
-    opacity: 0.5;
+  #navbar .nav .nav-header {
+    display: inline;
+    
   }
-  .nav .active a{
-      opacity: 1;
-      font-size: 1.25rem;
-      letter-spacing: -0.5px;
-    }
+  #navbar .nav-title img{
+      height: 80px;
+      width: 150px;
+      float: left;
+      position: absolute;
+      top: -10px;
+  }
   
-  .nav-item a:hover {
-    font-size: 1.3rem;
-    letter-spacing: 1.5px;
+  #navbar .nav .nav-header .nav-title {
+    display: inline;
+    color: #fff;
+    padding: 0;
+  }
+  
+  #navbar .nav .nav-btn {
+    display: none;
+  }
+  
+  #navbar .nav .nav-links {
+    display: inline;
+    font-size: 20px;
+    position: absolute;
+    left: 180px;
+  }
+  #navbar .nav .nav-logos {
+    display: inline;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    font-size: 18px;
+  }
+  #navbar .nav .nav-logos a{
+      padding: 0 30px;
+      text-decoration: none;
+      display: inline;
+      vertical-align: middle;
+      color: white;
+  }
+  #navbar .nav .nav-links a {
+    display: inline-block;
+    padding: 13px 10px;
+    text-decoration: none;
+    opacity: 0.4;
+    color: #efefef;
+    transition: 0.3s;
+  }
+  #navbar .nav .nav-links a:hover {
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+  #navbar .nav .nav-links .active{
+    opacity: 1;
+    font-size: 22px;
+  }
+  #navbar .nav .nav-logos sup{
+    text-decoration: none;
+    font-size: 7px;
+    color: #efefef;
+    background: #E50914;
+    border: 1px solid #E50914;
+    border-radius: 50%;
+    padding: 1px 3px 0 2px;
+    position: relative;
+    top: -4px;
+    left: -1px;
+  }
+  
+
+  #navbar .nav .avatar{
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      border-radius: 2px;
+  }  
+  #navbar .nav #nav-check {
+    display: none;
+  }
+  #navbar .nav .nav-logos a:hover{
+    color: #E50914;
   }
 
-  .navbar .avatar{
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    position: absolute;
-    right: 80px;
-    top: 26px;
-    border-radius: 2px;
-  }
+
   /* SECTIONS */
   
   .headline {
-    width: 98.9vw;
+    max-width: 98.9vw;
     height: 105vh;
     overflow-x: hidden;
     min-height: 350px;
@@ -291,23 +321,7 @@
   .movie-container:hover {
         transform: scale(1.07);
     }
-  
-  /* NAV ICONS */
-  
-  #icon {
-    font-size: 1.1rem;
-    color: #fff;
-    margin-top: 3px;
-    margin-left: 40vw;
-    transition: color 0.3s ease-out;
-  }
-
-  #icon:hover {
-    color: #E50914;
-    cursor: pointer;
-  }
-  
-  
+    
   /* FOOTER */
   .link {
     padding: 50px 100px 0 100px;
@@ -376,3 +390,37 @@
 
   }
   
+
+/* icon animation */
+.nav .nav-logos i:hover{
+  animation: ring 1s ease;
+}
+.fa-bell:hover sup{
+  color: #efefef;
+}
+@keyframes ring {
+  0% {
+      transform: rotate(35deg);
+  }
+  12.5% {
+      transform: rotate(-30deg);
+  }
+  25% {
+      transform: rotate(25deg);
+  }
+  37.5% {
+      transform: rotate(-20deg);
+  }
+  50% {
+      transform: rotate(15deg);
+  }
+  62.5% {
+      transform: rotate(-10deg);
+  }
+  75% {
+      transform: rotate(5deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
