@@ -8,8 +8,12 @@
     font-family: 'Open Sans', sans-serif;
     overflow-x: h;
     scroll-behavior: smooth;
+    
   }
-
+body{
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+  
+}
   /* HEADINGS */
   
   h1, p {
@@ -123,6 +127,12 @@
       cursor: pointer;
       border-radius: 2px;
   }  
+  #navbar .nav-logos .fa-angle-down{
+    padding: 5px;
+    font-size: 13px;
+    animation: none!important;
+    color: white!important;
+  }
   #navbar .nav #nav-check {
     display: none;
   }
@@ -135,7 +145,7 @@
   /* SECTIONS */
   
   .headline {
-    max-width: 98.9vw;
+    max-width: 100vw;
     height: 105vh;
     overflow-x: hidden;
     min-height: 350px;
@@ -281,17 +291,16 @@
   }
   /*Movies */
   .movies {
-    width: auto;
+    width: 100%;
     height: auto;
     background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
     display: flex;
-    padding: 0px 40px;
-    justify-content: space-around;
+    padding: 0px 20px;
+    justify-content: space-evenly;
   }
   
   .movie-container {
-    flex-basis: 80%;
-    margin: 5px 5px;
+    margin: 5px;
     transition: 0.5s;
     cursor: pointer;
   }
@@ -314,7 +323,8 @@
       margin-right:6px;
   }
   .movie-container img {
-    width: 240px;
+    width: 100%;
+    max-width: 240px;
     height: 140px;
     border-radius: 4px;
     /* margin-bottom: 15px; */
