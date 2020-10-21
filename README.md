@@ -7,7 +7,7 @@ Non-responsive Netflix Landing page.
 - HTML5
 - CSS3
 
-- Website Link : https://mm1025web.github.io/netflix.com/
+- Website Link : https://mmuazam98.github.io/netflix.com/
 <p align="center">
 <img width=40% src="ScreenshotsWeb/ScreenshotWeb1.PNG"> &ensp;
 <img width=40% src="ScreenshotsWeb/ScreenshotWeb2.PNG"> &ensp;
