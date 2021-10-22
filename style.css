@@ -102,6 +102,7 @@ body{
   #navbar .nav .nav-links a:hover {
     font-size: 22px;
     letter-spacing: 1px;
+    color: #E50914;
   }
   #navbar .nav .nav-links .active{
     opacity: 1;
@@ -363,8 +364,9 @@ body{
     text-decoration: underline;
   }
   .logos{
-    margin-left: 17.5vw;
+    text-align: center;
     padding-bottom: 10px;
+    margin-bottom: 3vw;
   }
   .logos a{
     padding: 10px;
@@ -381,21 +383,22 @@ body{
     background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
     padding: 30px 10px 20px 10px;
     display: block;
+    text-align: center;
     /* margin-left: -340px; */
   }
   footer a{
-    margin-left: 24vw;
     text-decoration: none;
     color: #686868;
     border: 2px solid #686868;
     padding: 3px 7px;
+    text-align: center;
     
   }
   footer p{
     margin-top: 20px;
-    margin-left: 24vw;
     text-align: left;
     color: #686868;
+    text-align: center;
   }
   footer a:hover{
     color: #858585;
